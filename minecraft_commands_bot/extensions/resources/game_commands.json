@@ -1,6 +1,51 @@
 {
+  "achievement": {
+    "usage": "<give|take> <name|*> [player]"
+  },
+  "ban": {
+    "usage": "<name> [reason …]"
+  },
+  "ban-ip": {
+    "usage": "<address|name> [reason ...]"
+  },
+  "banlist": {
+    "usage": [
+      "ips",
+      "players"
+    ]
+  },
+  "blockdata": {
+    "usage": "<x> <y> <z> <dataTag>"
+  },
+  "clear": {
+    "usage": "[player] [item] [data] [maxCount] [dataTag]"
+  },
   "clone": {
     "usage": "<x1> <y1> <z2> <x2> <y2> <z2> <x> <y> <z> [maskMode] [cloneMode]"
+  },
+  "debug": {
+    "usage": "<start|stop>"
+  },
+  "defaultgamemode": {
+    "usage": "[mode]"
+  },
+  "deop": {
+    "usage": "<player>"
+  },
+  "difficulty": {
+    "usage": "difficulty"
+  },
+  "effect": {
+    "usage": [
+      "<player> clear",
+      "<player> <effect> [seconds] [amplifier] [hideParticles]"
+    ]
+  },
+  "enchant": {
+    "usage" : "<player> <enchantment ID> [level]"
+  },
+  "entitydata": {
+    "usage": "<entity> <dataTag>"
   },
   "execute": {
     "usage": [
@@ -8,10 +53,187 @@
       "<entity> <x> <y> <z> detect <x> <y> <z> <block> <dataValue|-1|state|*> <command>"
     ]
   },
+  "fill": {
+    "usage": [
+      "<x1> <y1> <z1> <x2> <y2> <z2> <block> [dataValue|state] [oldBlockHandling] [dataTag]",
+      "<x1> <y1> <z1> <x2> <y2> <z2> <block> <dataValue|state> replace [replaceTileName] [replaceDataValue]"
+    ]
+  },
+  "gamemode": {
+    "usage": "<mode> [player]"
+  },
+  "gamerule": {
+    "usage": "<rule name> [value]"
+  },
+  "give": {
+    "usage": "<player> <item> [amount] [data] [dataTag]"
+  },
+  "help": {
+    "usage": "[page|command name]"
+  },
+  "kick": {
+    "usage": "<player> [reason …]"
+  },
+  "list": {
+    "usage": "[uuids]"
+  },
+  "locate": {
+    "usage": "<StructureType>"
+  },
+  "me": {
+    "usage": "<action ...>"
+  },
+  "msg": {
+    "usage": "<player> <message ...>"
+  },
+  "op": {
+    "usage": "<player>"
+  },
+  "pardon": {
+    "usage": "<name>"
+  },
+  "pardon-ip": {
+    "usage": "<address>"
+  },
+  "particle": {
+    "usage": "<name> <x> <y> <z> <xd> <yd> <zd> <speed> [count] [mode] [player] [params ...]"
+  },
+  "playsound": {
+    "usage": "<sound> <source> <player> [x] [y] [z] [volume] [pitch] [minimumVolume]"
+  },
+  "publish": {
+  },
+  "replaceitem": {
+    "usage": [
+      "replaceitem block <x> <y> <z> <slot> <item> [amount] [data] [dataTag]",
+      "replaceitem entity <selector> <slot> <item> [amount] [data] [dataTag]"
+      ]
+  },
+  "save": {
+  },
+  "save-all": {
+    "usage": "[flush]"
+  },
+  "save-off": {
+  },
+  "save-on": {
+  },
+  "say": {
+    "usage": "<message ...>"
+  },
+  "scoreboard": {
+    "usage": "<objectives|players|teams> …"
+  },
+  "seed": {
+  },
   "setblock": {
     "usage": "<x> <y> <z> <block> [dataValue|state] [oldBlockHandling] [dataTag]"
   },
+  "setidletimeout": {
+    "usage": "<Minutes until kick>"
+  },
+  "setworldspawn": {
+    "usage": "<x> <y> <z>"
+  },
+  "spawnpoint": {
+    "usage": "<player> <x> <y> <z>"
+  },
+  "spreadplayers": {
+    "usage": "<x> <z> <spreadDistance> <maxRange> <respectTeams> <player …>"
+  },
+  "stats": {
+    "usage": [
+      "block <x> <y> <z> clear <stat>",
+      "block <x> <y> <z> set <stat> <selector> <objective>",
+      "entity <selector2> clear <stat>",
+      "entity <selector2> set <stat> <selector> <objective>"
+      ]
+  },
+  "stop": {
+  },
+  "stopsound": {
+    "usage": "<player> [source] [sound]"
+  },
+  "summon": {
+    "usage": "<EntityName> [x] [y] [z] [dataTag]"
+  },
+  "teleport": {
+    "usage": "<target entity> <x> <y> <z> [<y-rot> <x-rot>]"
+  },
+  "tell": {
+    "usage": "<player> <message ...>"
+  },
+  "tellraw": {
+    "usage": "<player> <raw json message>"
+  },
+  "testfor": {
+    "usage": "<player> [dataTag]"
+  },
   "testforblock": {
     "usage": "<x> <y> <z> <block> [dataValue|state] [dataTag]"
+  },
+  "testforblocks": {
+    "usage": "<x1> <y1> <z1> <x2> <y2> <z2> <x> <y> <z> [mode]"
+  },
+  "time": {
+    "usage": "<add|query|set> <value>"
+  },
+  "title": {
+    "usage": [
+      "<player> clear",
+      "<player> reset",
+      "<player> title <raw json title>",
+      "<player> subtitle <raw json title>",
+      "<player> actionbar <raw json title>",
+      "<player> times <fadeIn> <stay> <fadeOut>"
+      ]
+  },
+  "toggledownfall": {
+  },
+  "tp": {
+    "usage": [
+      "[target player] <destination player>",
+      "[target player] <x> <y> <z> [<yaw> <pitch>]"
+      ]
+  },
+  "trigger": {
+    "usage": "<objective> <add|set> <value>"
+  },
+  "w": {
+    "usage": "<player> <message ...>"
+  },
+  "weather": {
+    "usage": "<clear|rain|thunder> [duration]"
+  },
+  "whitelist": {
+    "usage": [
+      "add <player>",
+      "list",
+      "off",
+      "on",
+      "reload",
+      "remove <player>"
+      ]
+  },
+  "worldborder": {
+    "usage": [
+      "add <distance> [time]",
+      "center <x> <z>",
+      "damage amount <damagePerBlock>",
+      "damage buffer <distance>",
+      "get",
+      "set <distance> [time]",
+      "warning distance <distance>",
+      "warning time <time>"
+      ]
+  },
+  "wsserver": {
+    "usage": "<serverURI>"
+  },
+  "xp": {
+    "usage": [
+      "<amount> [player]",
+      "<amount>L [player]"
+      ]
   }
 }
