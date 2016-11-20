@@ -1,0 +1,17 @@
+{
+  "clone": {
+    "usage": "<x1> <y1> <z2> <x2> <y2> <z2> <x> <y> <z> [maskMode] [cloneMode]"
+  },
+  "execute": {
+    "usage": [
+      "<entity> <x> <y> <z> <command>",
+      "<entity> <x> <y> <z> detect <x> <y> <z> <block> <dataValue|-1|state|*> <command>"
+    ]
+  },
+  "setblock": {
+    "usage": "<x> <y> <z> <block> [dataValue|state] [oldBlockHandling] [dataTag]"
+  },
+  "testforblock": {
+    "usage": "<x> <y> <z> <block> [dataValue|state] [dataTag]"
+  }
+}
